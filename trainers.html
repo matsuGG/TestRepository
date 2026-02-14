@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Card Note | トレーナーズ詳細</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TX8LRDN09H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TX8LRDN09H');
+</script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Pokemon Card Note</a>
+    <nav class="site-nav" aria-label="ページ遷移">
+      <a href="pokemon.html">ポケモン</a>
+      <a href="trainers.html">トレーナーズ</a>
+      <a href="energy.html">エネルギー</a>
+      <a href="collection.html">コレクション</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section id="top" class="hero" data-reveal data-section>
+      <p class="eyebrow">Trainers</p>
+      <h1>トレーナーズ詳細ガイド</h1>
+      <p class="lead">サポート、グッズ、どうぐ、スタジアムの採用順と、ターンごとの使い分けを深掘り。</p>
+    </section>
+
+    <section id="support" class="panel" data-reveal data-section>
+      <h2>1. サポートの優先順位</h2>
+      <p>サポートは1ターン1枚制約のため、デッキ全体の行動を最も左右する枠です。</p>
+      <ul class="bullet-list">
+        <li>初動安定系: 手札補充と盤面展開を同時に進めるカードを最優先。</li>
+        <li>中盤制圧系: 相手手札干渉、盤面指定除去を状況依存で採用。</li>
+        <li>終盤詰め系: 必要札に直接触るサーチを1-2枠残す。</li>
+      </ul>
+    </section>
+
+    <section id="goods" class="panel" data-reveal data-section>
+      <h2>2. グッズ設計とテンポ</h2>
+      <p>グッズはターン内に複数回使えるため、1ターンの出力上限を引き上げる役割を持ちます。</p>
+      <div class="table-like">
+        <div class="row-like header"><span>系統</span><span>主用途</span><span>注意点</span></div>
+        <div class="row-like"><span>サーチ</span><span>必要札へ最短到達</span><span>対象制限を把握する</span></div>
+        <div class="row-like"><span>入れ替え</span><span>バトル場の拘束解除</span><span>終盤まで温存しすぎない</span></div>
+        <div class="row-like"><span>回収</span><span>再利用で息切れ防止</span><span>手札上限と山札枚数を意識</span></div>
+      </div>
+    </section>
+
+    <section id="tool" class="panel" data-reveal data-section>
+      <h2>3. ポケモンのどうぐ採用法</h2>
+      <p>どうぐは「火力補強」「耐久補強」「機能付与」のどれかを担います。役割が重複しないように割り当てるのが基本です。</p>
+      <ol class="checklist">
+        <li>主力アタッカーにのみ付けるか、補助にも広く配るかを先に決める。</li>
+        <li>どうぐ剥がし対策として、必須機能をどうぐ依存にしすぎない。</li>
+        <li>1枚で試すより、必要なら2-3枚で再現性を担保する。</li>
+      </ol>
+    </section>
+
+    <section id="stadium" class="panel" data-reveal data-section>
+      <h2>4. スタジアムの張り替え戦</h2>
+      <p>スタジアムは盤面ルールを上書きする札です。相手のキーカードを消す目的で採用するだけでも価値があります。</p>
+      <ul class="bullet-list">
+        <li>自分の恩恵が小さくても、相手の強みを消せるなら採用候補。</li>
+        <li>張り替え合戦が起きる環境では、3枚以上で先に貼り勝つ発想が有効。</li>
+        <li>サーチ可能な構成なら枚数を圧縮し他枠に回せる。</li>
+      </ul>
+    </section>
+
+    <section id="conclusion" class="panel" data-reveal data-section>
+      <h2>結論</h2>
+      <p>トレーナーズは「初動安定」「中盤維持」「終盤詰め」の3フェーズで用途を分けると組みやすくなります。制約の強いサポートから先に固めるのが最短です。</p>
+    </section>
+  </main>
+
+  <aside class="article-menu" aria-label="記事メニュー">
+    <p>記事メニュー</p>
+    <a href="#top">概要</a>
+    <a href="#support">サポート</a>
+    <a href="#goods">グッズ</a>
+    <a href="#tool">どうぐ</a>
+    <a href="#stadium">スタジアム</a>
+    <a href="#conclusion">結論</a>
+    <span class="menu-sep"></span>
+    <a href="index.html">総合</a>
+    <a href="pokemon.html">ポケモン</a>
+    <a href="energy.html">エネルギー</a>
+    <a href="collection.html">コレクション</a>
+  </aside>
+
+  <footer class="site-footer"><p>Pokemon Card Note</p></footer>
+</body>
+</html>

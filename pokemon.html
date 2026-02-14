@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Card Note | ポケモンカード詳細</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TX8LRDN09H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TX8LRDN09H');
+</script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Pokemon Card Note</a>
+    <nav class="site-nav" aria-label="ページ遷移">
+      <a href="pokemon.html">ポケモン</a>
+      <a href="trainers.html">トレーナーズ</a>
+      <a href="energy.html">エネルギー</a>
+      <a href="collection.html">コレクション</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section id="top" class="hero" data-reveal data-section>
+      <p class="eyebrow">Pokemon Card</p>
+      <h1>ポケモンカード詳細ガイド</h1>
+      <p class="lead">進化ライン設計、アタッカー選定、特性の使いどころ、サイドレース管理までを実戦視点で深掘り。</p>
+    </section>
+
+    <section id="roles" class="panel" data-reveal data-section>
+      <h2>1. 役割分担の設計</h2>
+      <p>ポケモン枠は「メインアタッカー」「サブアタッカー」「エンジン」「壁役」の4層で考えると構築が安定します。</p>
+      <ul class="bullet-list">
+        <li>メインアタッカー: 毎ターン攻撃可能で、必要エネが重すぎないカードを優先。</li>
+        <li>サブアタッカー: 苦手対面を補う打点・弱点属性を持つカードを配置。</li>
+        <li>エンジン: ドロー、サーチ、エネ加速などデッキ回転を担う特性持ちを採用。</li>
+        <li>壁役: 序盤に時間を稼ぎ、盤面準備を通すための低コストカードを活用。</li>
+      </ul>
+    </section>
+
+    <section id="evolution" class="panel" data-reveal data-section>
+      <h2>2. 進化ラインと枚数感</h2>
+      <p>進化デッキは事故率を下げるため、初動のたね枚数と進化先比率のバランスが重要です。</p>
+      <div class="table-like">
+        <div class="row-like header"><span>型</span><span>推奨目安</span><span>狙い</span></div>
+        <div class="row-like"><span>2進化軸</span><span>たね4-5 / 1進化3-4 / 2進化2-3</span><span>中盤から高打点連打</span></div>
+        <div class="row-like"><span>1進化軸</span><span>たね4 / 1進化3-4</span><span>序盤からテンポ確保</span></div>
+        <div class="row-like"><span>たね主体</span><span>主力3-4 + 補助2-4</span><span>展開速度と安定性</span></div>
+      </div>
+      <p>枚数は固定値ではなく、サーチ手段の厚さで微調整します。ボール系が厚いなら進化枚数は最小限でも回ります。</p>
+    </section>
+
+    <section id="attacker" class="panel" data-reveal data-section>
+      <h2>3. アタッカー評価のチェック軸</h2>
+      <ol class="checklist">
+        <li>必要エネルギー: 2エネ以内で主力ワザが撃てるか。</li>
+        <li>打点ライン: 主要HP帯を1-2回の攻撃で超えられるか。</li>
+        <li>再現性: 毎ターン同じ動きが取れるか。</li>
+        <li>退場コスト: きぜつ時のサイド枚数リスクが重すぎないか。</li>
+        <li>逃げ性能: 不利盤面での切り返し余地があるか。</li>
+      </ol>
+    </section>
+
+    <section id="tempo" class="panel" data-reveal data-section>
+      <h2>4. サイドレースとテンポ管理</h2>
+      <p>対戦では「何ターンで6枚取り切るか」を逆算し、相手の進行を1ターン遅らせる行動を優先します。</p>
+      <ul class="bullet-list">
+        <li>2枚取りポケモンexを主軸にする場合、失点速度も上がるため入れ替え札を厚めにする。</li>
+        <li>低HP主体デッキ相手には過剰打点よりも連続攻撃性を重視する。</li>
+        <li>終盤は「次ターンの勝ち筋」を最優先し、手札温存より即時打点を選ぶ。</li>
+      </ul>
+    </section>
+
+    <section id="conclusion" class="panel" data-reveal data-section>
+      <h2>結論</h2>
+      <p>ポケモンカード選定は単体性能より「毎ターンの動きが再現できるか」で判断すると失敗しにくくなります。進化比率、特性エンジン、サイドレースの3点を同時に設計するのが要点です。</p>
+    </section>
+  </main>
+
+  <aside class="article-menu" aria-label="記事メニュー">
+    <p>記事メニュー</p>
+    <a href="#top">概要</a>
+    <a href="#roles">役割分担</a>
+    <a href="#evolution">進化ライン</a>
+    <a href="#attacker">評価軸</a>
+    <a href="#tempo">テンポ管理</a>
+    <a href="#conclusion">結論</a>
+    <span class="menu-sep"></span>
+    <a href="index.html">総合</a>
+    <a href="trainers.html">トレーナーズ</a>
+    <a href="energy.html">エネルギー</a>
+    <a href="collection.html">コレクション</a>
+  </aside>
+
+  <footer class="site-footer"><p>Pokemon Card Note</p></footer>
+</body>
+</html>

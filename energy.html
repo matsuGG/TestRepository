@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Card Note | エネルギー詳細</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TX8LRDN09H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TX8LRDN09H');
+</script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Pokemon Card Note</a>
+    <nav class="site-nav" aria-label="ページ遷移">
+      <a href="pokemon.html">ポケモン</a>
+      <a href="trainers.html">トレーナーズ</a>
+      <a href="energy.html">エネルギー</a>
+      <a href="collection.html">コレクション</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section id="top" class="hero" data-reveal data-section>
+      <p class="eyebrow">Energy</p>
+      <h1>エネルギー詳細ガイド</h1>
+      <p class="lead">エネルギーは少なすぎると動けず、多すぎると手札事故を起こします。採用枚数の考え方を実務的に整理します。</p>
+    </section>
+
+    <section id="basic" class="panel" data-reveal data-section>
+      <h2>1. 基本エネルギー設計</h2>
+      <p>単色構築なら基本エネルギー中心で安定性を優先。多色構築はサーチ枚数を前提に色比率を決定します。</p>
+      <ul class="bullet-list">
+        <li>主軸ワザ1回分を2ターン目に満たせる枚数を最低ラインに設定。</li>
+        <li>序盤に不要色が重なる事故を避けるため、補助色は必要最小限に留める。</li>
+        <li>トラッシュ利用型なら回収手段とセットで枚数を下げられる。</li>
+      </ul>
+    </section>
+
+    <section id="special" class="panel" data-reveal data-section>
+      <h2>2. 特殊エネルギーの使いどころ</h2>
+      <p>特殊エネルギーは瞬間的な出力を上げる一方、対策カードで失速しやすい弱点があります。</p>
+      <div class="table-like">
+        <div class="row-like header"><span>目的</span><span>効果例</span><span>運用ポイント</span></div>
+        <div class="row-like"><span>加速</span><span>実質2個分扱い</span><span>序盤に引ける確率を計算して2-4枚で調整</span></div>
+        <div class="row-like"><span>耐久補助</span><span>被ダメ軽減</span><span>受け主体デッキで価値が上がる</span></div>
+        <div class="row-like"><span>条件緩和</span><span>必要色を満たす</span><span>多色要求ワザの安定化に使う</span></div>
+      </div>
+    </section>
+
+    <section id="math" class="panel" data-reveal data-section>
+      <h2>3. 枚数決定の実戦式</h2>
+      <p>厳密計算まで行かなくても、60枚中の採用率から初手・2ターン目到達率の感覚を持つと事故が減ります。</p>
+      <ol class="checklist">
+        <li>12枚採用: 初動は安定しやすいが後半の重なりが増えやすい。</li>
+        <li>10枚採用: バランス型。サーチが十分なら最も扱いやすい。</li>
+        <li>8枚採用: 事故リスク増。加速手段とドロー量が必須。</li>
+      </ol>
+      <p>重要なのは「総枚数」だけでなく、アクセス手段（ボール、サポート、特性）を含めた仮想枚数です。</p>
+    </section>
+
+    <section id="management" class="panel" data-reveal data-section>
+      <h2>4. プレイ中の管理技術</h2>
+      <ul class="bullet-list">
+        <li>手貼り先は「次ターンに攻撃する個体」に固定し、迷いを減らす。</li>
+        <li>終盤の山札枚数を見て、エネルギーの残り本数を逆算する。</li>
+        <li>不要エネルギーをコストに使い、必要色を手札に残す癖をつける。</li>
+      </ul>
+    </section>
+
+    <section id="conclusion" class="panel" data-reveal data-section>
+      <h2>結論</h2>
+      <p>エネルギー設計は「必要ターンまでに必要本数へ到達できるか」で決めるのが本質です。特殊エネルギーは便利ですが、対策される前提で冗長性を持たせると安定します。</p>
+    </section>
+  </main>
+
+  <aside class="article-menu" aria-label="記事メニュー">
+    <p>記事メニュー</p>
+    <a href="#top">概要</a>
+    <a href="#basic">基本エネ</a>
+    <a href="#special">特殊エネ</a>
+    <a href="#math">枚数設計</a>
+    <a href="#management">管理技術</a>
+    <a href="#conclusion">結論</a>
+    <span class="menu-sep"></span>
+    <a href="index.html">総合</a>
+    <a href="pokemon.html">ポケモン</a>
+    <a href="trainers.html">トレーナーズ</a>
+    <a href="collection.html">コレクション</a>
+  </aside>
+
+  <footer class="site-footer"><p>Pokemon Card Note</p></footer>
+</body>
+</html>
