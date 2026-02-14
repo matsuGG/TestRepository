@@ -1,11 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Card Note</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>どうもざうるす</h1>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Pokemon Card Note</a>
+    <nav class="site-nav" aria-label="主要セクション">
+      <a href="#overview">概要</a>
+      <a href="#rarity">レアリティ</a>
+      <a href="#types">カードタイプ</a>
+      <a href="#care">保管</a>
+    </nav>
+  </header>
+
+  <main id="top" class="layout">
+    <section class="hero" data-reveal>
+      <p class="eyebrow">Collection Guide</p>
+      <h1>ポケモンカード情報まとめ</h1>
+      <p class="lead">
+        初心者が最初に押さえるべき見方、レアリティの考え方、購入時のチェックポイントを
+        1ページに整理した静的まとめサイトです。
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#rarity">レアリティを見る</a>
+        <a class="button" href="#types">タイプ比較へ</a>
+      </div>
+      <div class="stats" aria-label="注目ポイント">
+        <article class="stat-card">
+          <p class="stat-label">基本分類</p>
+          <p class="stat-value" data-count="4">0</p>
+          <p class="stat-note">カードの主な役割</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">レアリティ段階</p>
+          <p class="stat-value" data-count="7">0</p>
+          <p class="stat-note">一般的な目安</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">保管ポイント</p>
+          <p class="stat-value" data-count="5">0</p>
+          <p class="stat-note">長期保存の要点</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="overview" class="panel" data-reveal>
+      <h2>ポケモンカードの基本</h2>
+      <div class="overview-grid">
+        <article>
+          <h3>デッキの軸</h3>
+          <p>ポケモン・トレーナーズ・エネルギーを組み合わせ、攻撃の再現性と安定性を高めて構築します。</p>
+        </article>
+        <article>
+          <h3>集め方の方向性</h3>
+          <p>対戦重視なら汎用カード優先、コレクション重視ならイラストや希少性のテーマを先に決めると効率的です。</p>
+        </article>
+        <article>
+          <h3>見るべき情報</h3>
+          <p>カード名、HP、ワザ、特性、収録弾、レギュレーションマークを確認して用途を判断します。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="rarity" class="panel" data-reveal>
+      <div class="section-head">
+        <h2>レアリティ早見</h2>
+        <p>ボタンを切り替えると、目的別にチェックすべきポイントを表示します。</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="レアリティ切り替え">
+        <button class="tab is-active" type="button" data-tab="standard">スタンダード</button>
+        <button class="tab" type="button" data-tab="collector">コレクター</button>
+        <button class="tab" type="button" data-tab="investment">長期保有</button>
+      </div>
+      <div class="tab-panels">
+        <article class="tab-panel is-active" data-panel="standard">
+          <h3>対戦向けで見る基準</h3>
+          <ul>
+            <li>入手しやすいR・RR・ノーマル汎用カードを中心に確保</li>
+            <li>同名カードの採用枚数を揃えてデッキの安定性を上げる</li>
+            <li>テキスト性能を優先し、希少加工は二次要素として判断</li>
+          </ul>
+        </article>
+        <article class="tab-panel" data-panel="collector">
+          <h3>コレクション向けで見る基準</h3>
+          <ul>
+            <li>AR・SAR・SRなどのイラスト性が高いカードをテーマ収集</li>
+            <li>同一ポケモンを複数イラストで揃えると統一感が出る</li>
+            <li>傷・白欠けの少ない個体を優先して保管する</li>
+          </ul>
+        </article>
+        <article class="tab-panel" data-panel="investment">
+          <h3>長期保有で見る基準</h3>
+          <ul>
+            <li>人気キャラ、記念弾、限定プロモなど背景要素を確認</li>
+            <li>再販や流通量によって相場が動くため分散して保有</li>
+            <li>スリーブ・ローダー・防湿管理を徹底して状態維持</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="types" class="panel" data-reveal>
+      <div class="section-head">
+        <h2>カードタイプ別メモ</h2>
+        <p>ボタンで表示を絞り込めます。</p>
+      </div>
+      <div class="filters" role="group" aria-label="カードタイプ絞り込み">
+        <button class="chip is-active" type="button" data-filter="all">すべて</button>
+        <button class="chip" type="button" data-filter="battle">対戦重視</button>
+        <button class="chip" type="button" data-filter="collection">コレクション重視</button>
+      </div>
+      <div class="cards">
+        <article class="info-card" data-kind="battle" data-reveal>
+          <h3>ポケモンex</h3>
+          <p>高HPかつ高火力が魅力。倒されるとサイドを2枚取られる点を意識して運用する。</p>
+        </article>
+        <article class="info-card" data-kind="battle" data-reveal>
+          <h3>サポート</h3>
+          <p>手札補充・妨害・サーチなど役割が多い。1ターン1枚の制約が構築力に直結する。</p>
+        </article>
+        <article class="info-card" data-kind="battle" data-reveal>
+          <h3>グッズ</h3>
+          <p>連続使用しやすくテンポを作る。序盤の展開速度を決める重要パーツ。</p>
+        </article>
+        <article class="info-card" data-kind="collection" data-reveal>
+          <h3>AR</h3>
+          <p>背景描写が豊かでコレクション人気が高い。テーマ別で集めると見栄えが良い。</p>
+        </article>
+        <article class="info-card" data-kind="collection" data-reveal>
+          <h3>SAR</h3>
+          <p>希少性とイラスト性を兼ねる枠。記念弾や人気ポケモンは需要が集中しやすい。</p>
+        </article>
+        <article class="info-card" data-kind="collection" data-reveal>
+          <h3>プロモ</h3>
+          <p>配布条件やイベント背景が価値に影響。入手経路と配布時期のメモが有効。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" data-reveal>
+      <div class="section-head">
+        <h2>購入前チェックリスト</h2>
+      </div>
+      <ol class="checklist">
+        <li>目的を決める: 対戦用かコレクション用かを先に明確化する。</li>
+        <li>予算を分ける: パック開封枠とシングル購入枠を分離する。</li>
+        <li>状態を確認する: 傷、白欠け、反り、センタリングを目視で確認する。</li>
+        <li>相場を見る: 同カードの販売価格と売却価格の幅を比較する。</li>
+        <li>保管手段を用意する: スリーブ、ローダー、防湿剤を先に用意する。</li>
+      </ol>
+    </section>
+
+    <section id="care" class="panel" data-reveal>
+      <div class="section-head">
+        <h2>保管とメンテナンス</h2>
+        <p>各項目をクリックすると詳細が開きます。</p>
+      </div>
+      <div class="accordion">
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button">スリーブは二重構成で保護する</button>
+          <div class="accordion-body"><p>インナーとオーバーを組み合わせることで擦れや角欠けを抑えやすくなります。</p></div>
+        </article>
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button">湿度は40〜50%目安に維持する</button>
+          <div class="accordion-body"><p>湿度が高すぎると反り、低すぎると乾燥劣化の要因になるため、防湿ケース管理が有効です。</p></div>
+        </article>
+        <article class="accordion-item">
+          <button class="accordion-trigger" type="button">直射日光を避ける</button>
+          <div class="accordion-body"><p>長時間の紫外線は退色の原因になります。展示時もUV対策を意識します。</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Pokemon Card Note | Static Showcase Template</p>
+  </footer>
 </body>
 </html>
